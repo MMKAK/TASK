@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    
+    body {
+      background-color: gray;
+      color: aliceblue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 80vh;
+      margin-top: 60px;
+    }
+
+    .container {
+      background-color: black;
+      width: 420px;
+      padding-top: 103px;
+      padding-bottom: 33px;
+      /* margin-top: 149px; */
+    }
+
+   .header{
+    width: 350px;
+    margin: auto;
+   }
+.header:hover{
+  border: 3px solid rgb(0, 217, 255);
+}
+    p {
+      font-size: smaller;
+      padding: 0 27px;
+    }
+
+    .header span {
+      color: rgb(0, 94, 255);
+    }
+
+    .bar {
+      width: 350px;
+      margin: 0 auto;
+              /* border: 2px solid green; */
+
+    }
+    
+    .bar:hover{
+        border: 3px solid rgb(0, 217, 255);
+    }
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 15px;
+    }
+
+    .input label {
+      color: rgba(128, 128, 128, 0.842);
+      margin-bottom: 5px;
+    }
+
+    .input input {
+      background-color: transparent;
+      width: 100%;
+      border: none;
+      border-bottom: 1px dotted #999;
+      padding: 8px 0;
+      transition: border 0.2s;
+    }
+
+    .bar:hover .input input {
+      border-bottom: 2px dotted red;
+    }
+
+    /* Button */
+    button {
+      padding: 8px 16px;
+      border: none;
+      background-color: transparent;
+      color: white;
+      cursor: pointer;
+      transition: border 0.3s;
+    }
+    button:hover {
+      border: 2px dotted red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">
+      <h2>Fuel Your Brand's <br> Goals with <span>Beyond</span></h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, similique at. Nam, minus doloribus.</p>
+    </div>
+
+    <form>
+      <div class="bar">
+        <div class="input">
+          <label for="name">Name</label>
+          <input type="text" id="name" required>
+        </div>
+
+        <div class="input">
+          <label for="email">Email</label>
+          <input type="email" id="email">
+        </div>
+
+        <div class="input">
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone" required>
+        </div>
+
+        <div class="input">
+          <label for="budget">Budget</label>
+          <input type="text" id="budget" required>
+        </div>
+
+        <div class="input">
+          <label for="goal">Goal</label>
+          <input type="text" id="goal" required>
+        </div>
+      </div>
+
+      <button type="submit">Send Inquiry</button>
+    </form>
+  </div>
+</body>
+
+</html>
